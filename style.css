@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:whitesmoke;
+    display: flex;
+    height: 700px;
+}
+
+.right{
+    width: 250px;
+    border-right: 3px solid blue;
+    padding: 20px;
+}
+
+.logo{
+    font-size: 28px;
+    color: black;
+    margin-bottom: 28px;
+}
+.items a:hover{
+   background-color: rgb(11, 122, 207);
+   color: white;
+}
+
+.items a {
+    display: block;
+    padding: 12px;
+    color: gray;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+
+
+.main{
+    flex: 1;
+    padding: 24px;
+
+}
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters button:hover{
+    color: rgb(24, 139, 239);
+}
+
+.filters  button{
+ padding: 10px 13px ;
+ border: 1px solid rgb(74, 74, 74);
+ background-color:rgb(242, 239, 239);
+ border-radius: 20px;
+ margin-right: 10px;
+ cursor: pointer;
+ color: gray;
+}
+
+ .generate-btn{
+    background-color: rgb(8, 122, 210);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cards{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px  rgba(0, 0, 0 45 deg);
+}
+
+.card h3{
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.card p{
+    margin-top: 5px;
+}
+
+.status{
+    font-size: 12px;
+    padding: 5px 9px;
+    border-radius: 12px;
+    
+
+}
+.approved{
+    background-color: rgb(161, 243, 161);
+    color: green;
+    margin-left: 270px;
+}
+.draft{
+    background-color: rgb(198, 195, 195);
+    color: brown;
+     margin-left: 300px;
+}
+.submitted{
+    background-color: rgb(163, 220, 245);
+    color: rgb(5, 91, 148);
+    margin-left: 270px;
+}
+
+.rejected{
+    background-color: rgb(243, 184, 184);
+    color: red;
+     margin-left: 270px;
+}
